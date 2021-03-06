@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ShisenSnackbar = ({message, type}) => {
+const CustomSnackbar = ({message, type}) => {
   const classes = useStyles();
   const [open, setOpen] = useState(true);
 
@@ -39,4 +39,4 @@ const ShisenSnackbar = ({message, type}) => {
   );
 }
 
-export default ShisenSnackbar;
+export default CustomSnackbar;
