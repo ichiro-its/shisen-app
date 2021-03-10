@@ -47,7 +47,6 @@ function App() {
     showMessage("Close", "warning");
   });
 
-  var ws;
   const handleConnect = () => {
     try {
       ros.connect(url);
