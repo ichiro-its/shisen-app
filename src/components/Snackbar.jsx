@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import Snackbar from '@material-ui/core/Snackbar';
+import MuiSnackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CustomSnackbar = ({ message, type }) => {
+const Snackbar = ({ message, type }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(true);
 
@@ -27,18 +27,18 @@ const CustomSnackbar = ({ message, type }) => {
 
   return (
     <div className={classes.root}>
-      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+      <MuiSnackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <MuiAlert elevation={6} variant="filled" onClose={(type === 'success') ? handleClose : ''} severity={type}>
           {message}
         </MuiAlert>
-      </Snackbar>
+      </MuiSnackbar>
     </div>
   );
 };
 
-CustomSnackbar.propTypes = {
+Snackbar.propTypes = {
   message: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
 };
 
-export default CustomSnackbar;
+export default Snackbar;

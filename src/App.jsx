@@ -8,8 +8,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import ROSLIB from 'roslib';
 
-import AppBar from './components/CustomAppBar';
-import Snackbar from './components/CustomSnackbar';
+import AppBar from './components/AppBar';
+import Snackbar from './components/Snackbar';
 
 const useStyles = makeStyles(() => ({
   root: {
