@@ -5,6 +5,7 @@
   },
   "extends": [
     "airbnb",
+    "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
   "parserOptions": {
@@ -15,6 +16,7 @@
     "sourceType": "module"
   },
   "plugins": [
+    "prettier",
     "react"
   ],
   "rules": {
