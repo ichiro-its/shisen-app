@@ -1,11 +1,14 @@
 {
   "name": "shisen-app",
   "version": "0.1.0",
+  "homepage": "https://ichiro-its.github.io/shisen-app/",
   "description": "Configurator web app for Shisen",
   "license": "MIT",
   "main": "index.js",
   "repository": "git@github.com:ichiro-its/shisen-app.git",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
