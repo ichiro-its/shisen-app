@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.ef11cb97.chunk.js",
-    "main.js.map": "/static/js/main.ef11cb97.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1ab4f5c7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1ab4f5c7.js.map",
-    "static/js/2.0e7d15f5.chunk.js": "/static/js/2.0e7d15f5.chunk.js",
-    "static/js/2.0e7d15f5.chunk.js.map": "/static/js/2.0e7d15f5.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.0e7d15f5.chunk.js.LICENSE.txt": "/static/js/2.0e7d15f5.chunk.js.LICENSE.txt"
+    "main.js": "/shisen-app/static/js/main.32e68bae.chunk.js",
+    "main.js.map": "/shisen-app/static/js/main.32e68bae.chunk.js.map",
+    "runtime-main.js": "/shisen-app/static/js/runtime-main.a6e602c8.js",
+    "runtime-main.js.map": "/shisen-app/static/js/runtime-main.a6e602c8.js.map",
+    "static/js/2.2f1b71d3.chunk.js": "/shisen-app/static/js/2.2f1b71d3.chunk.js",
+    "static/js/2.2f1b71d3.chunk.js.map": "/shisen-app/static/js/2.2f1b71d3.chunk.js.map",
+    "static/js/3.6b34cd14.chunk.js": "/shisen-app/static/js/3.6b34cd14.chunk.js",
+    "static/js/3.6b34cd14.chunk.js.map": "/shisen-app/static/js/3.6b34cd14.chunk.js.map",
+    "index.html": "/shisen-app/index.html",
+    "static/js/2.2f1b71d3.chunk.js.LICENSE.txt": "/shisen-app/static/js/2.2f1b71d3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ab4f5c7.js",
-    "static/js/2.0e7d15f5.chunk.js",
-    "static/js/main.ef11cb97.chunk.js"
+    "static/js/runtime-main.a6e602c8.js",
+    "static/js/2.2f1b71d3.chunk.js",
+    "static/js/main.32e68bae.chunk.js"
   ]
 }
