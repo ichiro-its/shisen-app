@@ -1,5 +1,4 @@
 import { LoggerProvider, SessionProvider } from "kumo-app";
-
 import React from "react";
 
 function App() {
