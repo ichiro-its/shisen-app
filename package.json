@@ -1,23 +1,19 @@
 {
   "name": "shisen-app",
   "version": "0.1.0",
-  "homepage": "https://ichiro-its.github.io/shisen-app/",
+  "homepage": "/shisen-app",
   "description": "Configurator web app for Shisen",
   "license": "MIT",
-  "main": "index.js",
   "repository": "git@github.com:ichiro-its/shisen-app.git",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint --ext .js,.jsx --ignore-path .gitignore .",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "run-s test-lint",
+    "test-lint": "eslint --ext .js,.jsx ."
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
-    "kumo-app": "git+https://github.com/ichiro-its/kumo-app.git",
+    "kumo-app": "git://github.com/ichiro-its/kumo-app.git#v0.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
@@ -28,24 +24,16 @@
     "eslint": "^7.21.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1"
   },
   "private": true,
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
