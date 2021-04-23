@@ -23,11 +23,11 @@ function SubscriptionImageTopic() {
 
   const [messages, setMessages] = useState([]);
 
-  const [topicName, setTopicName] = useState("camera/image_raw");
+  const [topicName, setTopicName] = useState("camera/raw_image");
 
   const subscription = useSubscription(
     node,
-    "std_msgs/msg/String",
+    "shisen_interfaces/msg/RawImage",
     topicName,
     (message) => {
       setMessages((prevMessages) => {
@@ -94,6 +94,7 @@ function SubscriptionImageTopic() {
               onChange={onTopicNameChange}
               disabled={subscription}
               variant="outlined"
+              fullWidth
             />
           </Grid>
           <Grid item xs={12}>
