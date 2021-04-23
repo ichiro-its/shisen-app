@@ -1,11 +1,12 @@
-import { LoggerProvider, SessionProvider } from "kumo-app";
 import React from "react";
+import { LoggerProvider, SessionProvider } from "kumo-app";
+import SubscriptionImageTopic from "./components/SubscriptionImageTopic";
 
 function App() {
   return (
     <LoggerProvider>
       <SessionProvider>
-        <div>Test</div>
+        <SubscriptionImageTopic />
       </SessionProvider>
     </LoggerProvider>
   );
