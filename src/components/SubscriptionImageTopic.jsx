@@ -34,7 +34,8 @@ function SubscriptionImageTopic() {
         const newMessages = prevMessages.slice();
         newMessages.unshift({
           id: uuid(),
-          data: message.data,
+          cols: message.cols,
+          rows: message.rows,
         });
 
         return newMessages;
@@ -64,7 +65,7 @@ function SubscriptionImageTopic() {
       const messageItems = messages.map((message) => {
         return (
           <ListItem key={message.id} button divider>
-            <ListItemText primary={message.data} />
+            <ListItemText primary={`${message.cols} x ${message.rows}`} />
           </ListItem>
         );
       });
