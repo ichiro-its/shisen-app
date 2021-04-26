@@ -1,11 +1,16 @@
-import { LoggerProvider, SessionProvider } from "kumo-app";
+import { Container } from "@material-ui/core";
 import React from "react";
+import { LoggerProvider, SessionProvider } from "kumo-app";
+
+import SubscriptionImageTopic from "./components/SubscriptionImageTopic";
 
 function App() {
   return (
     <LoggerProvider>
       <SessionProvider>
-        <div>Test</div>
+        <Container maxWidth="sm">
+          <SubscriptionImageTopic />
+        </Container>
       </SessionProvider>
     </LoggerProvider>
   );
