@@ -1,2 +1,0 @@
-(this["webpackJsonpshisen-app"]=this["webpackJsonpshisen-app"]||[]).push([[0],{71:function(e,t,n){"use strict";n.r(t);var s=n(0),c=n.n(s),r=n(3),i=n.n(r),j=n(25),a=n(9);var d=function(){return Object(a.jsx)(j.a,{children:Object(a.jsx)(j.b,{children:Object(a.jsx)("div",{children:"Test"})})})};i.a.render(Object(a.jsx)(c.a.StrictMode,{children:Object(a.jsx)(d,{})}),document.getElementById("root"))}},[[71,1,2]]]);
-//# sourceMappingURL=main.e446fc8f.chunk.js.map
