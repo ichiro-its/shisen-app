@@ -4,35 +4,20 @@ import { TitledCard } from "kumo-app";
 import { React, useState } from "react";
 
 function CaptureSettings() {
-  const [brightness, setBrightness] = useState(0);
-  const [contrast, setContrast] = useState(0);
-  const [saturation, setSaturation] = useState(0);
-  const [temperature, setTemperature] = useState(0);
-  const [hue, setHue] = useState(0);
-  const [gain, setGain] = useState(0);
+  const [config, setConfig] = useState({
+    brightness: 0,
+    contrast: 0,
+    saturation: 0,
+    temperature: 0,
+    hue: 0,
+    gain: 0,
+  });
 
-  const onBrightnessChange = (event) => {
-    setBrightness(event.target.value);
-  };
-
-  const onContrastChange = (event) => {
-    setContrast(event.target.value);
-  };
-
-  const onSaturationChange = (event) => {
-    setSaturation(event.target.value);
-  };
-
-  const onTemperatureChange = (event) => {
-    setTemperature(event.target.value);
-  };
-
-  const onHueChange = (event) => {
-    setHue(event.target.value);
-  };
-
-  const onGainChange = (event) => {
-    setGain(event.target.value);
+  const handleChange = (event) => {
+    setConfig({
+      ...config,
+      [event.target.name]: event.target.value,
+    });
   };
 
   return (
@@ -42,55 +27,61 @@ function CaptureSettings() {
           <Grid item xs={4}>
             <TextField
               label="Brightness"
-              value={brightness}
+              name="brightness"
+              value={config.brightness}
               type="number"
               variant="outlined"
-              onChange={onBrightnessChange}
+              onChange={handleChange}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
               label="Contrast"
-              value={contrast}
+              name="contrast"
+              value={config.contrast}
               type="number"
               variant="outlined"
-              onChange={onContrastChange}
+              onChange={handleChange}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
               label="Saturation"
-              value={saturation}
+              name="saturation"
+              value={config.saturation}
               type="number"
               variant="outlined"
-              onChange={onSaturationChange}
+              onChange={handleChange}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
               label="Temperature"
-              value={temperature}
+              name="temperature"
+              value={config.temperature}
               type="number"
               variant="outlined"
-              onChange={onTemperatureChange}
+              onChange={handleChange}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
               label="Hue"
-              value={hue}
+              name="hue"
+              value={config.hue}
               type="number"
               variant="outlined"
-              onChange={onHueChange}
+              onChange={handleChange}
             />
           </Grid>
           <Grid item xs={4}>
             <TextField
               label="Gain"
-              value={gain}
+              name="gain"
+              value={config.gain}
               type="number"
               variant="outlined"
-              onChange={onGainChange}
+              onChange={handleChange}
             />
           </Grid>
         </Grid>
