@@ -1,7 +1,7 @@
 import { Box, Grid, TextField } from "@material-ui/core";
 import { TitledCard } from "kumo-app";
 
-import { React, useState } from "react";
+import React, { useState } from "react";
 
 function CaptureSettings() {
   const [config, setConfig] = useState({
