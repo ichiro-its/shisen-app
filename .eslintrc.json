@@ -16,10 +16,6 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "prettier",
-    "react"
-  ],
-  "rules": {
-  }
+  "plugins": ["prettier", "react"],
+  "rules": {}
 }
