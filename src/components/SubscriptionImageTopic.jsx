@@ -87,7 +87,7 @@ function SubscriptionImageTopic() {
   return (
     <TitledCard title="Subscription Image Topic" raised disablePadding>
       <Box m={2} pt={2}>
-        <Grid spacing={2}>
+        <Grid container spacing={2}>
           <Grid item xs={12}>
             <TextField
               label="Topic Name"
