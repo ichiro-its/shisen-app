@@ -1,7 +1,7 @@
 name: Build and Deploy
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
       - name: Setting up Node
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: '14'
+          node-version: "14"
       - name: Installing and building app
         run: |
           npm install
@@ -20,4 +20,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
-          folder: build
+          folder: dist
