@@ -23,11 +23,11 @@ function SubscriptionImageTopic() {
 
   const [messages, setMessages] = useState([]);
 
-  const [topicName, setTopicName] = useState("camera/raw_image");
+  const [topicName, setTopicName] = useState("camera/image");
 
   const subscription = useSubscription(
     node,
-    "shisen_interfaces/msg/RawImage",
+    "shisen_interfaces/msg/Image",
     topicName,
     (message) => {
       setMessages((prevMessages) => {
